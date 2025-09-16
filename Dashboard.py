@@ -46,20 +46,20 @@ if page == "Home":
     add_slider = st.slider( 'Select a range of values', 0.0, 100.0, (25.0, 75.0))
 
 elif page == "About":
-    st.title("About This App")
+    st.title("Pamela Castillo")
     st.markdown("""
-        This is the About page with information about your app.")
+        The project I conducted during the Data Science course was based on a Kaggle dataset containing 11 features, 
+        aimed at predicting heart disease. Before performing exploratory data analysis (EDA), I started with 
+        data preparation by identifying missing values and renaming features. During the EDA, I used descriptive 
+        statistics to answer questions that helped me understand the dataset better. The data was not imbalanced. 
+        Then, I performed clustering using K-means and hierarchical clustering. Finally, I applied supervised 
+        machine learning models, including Random Forests, Decision Trees, Support Vector Machines, and Logistic 
+        Regression, to classify patients with and without cardiovascular disease. The best-performing model was 
+        the Decision Tree, which achieved the highest accuracy and F1 score.
+    """)
 
 
-# You can also add text right into the web as long comments (""")
-"""
-The final project aims to apply data science concepts and skills on a 
-medical case study that you and your team select from a public data source.
-The project assumes that you bring the technical Python skills from 
-previous courses (*DSHI*: Data Science for Health Informatics), as well as 
-the analytical skills to argue how and why specific techniques could
-enhance the problem domain related to the selected dataset.
-"""
+
 
 ###UNCOMMENT THE CODE BELOW TO SEE EXAMPLE OF INPUT WIDGETS
 
