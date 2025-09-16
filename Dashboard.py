@@ -12,7 +12,6 @@ st.sidebar.success("Select a tab above.")
 # # Page information
 
 st.write("# Welcome to PROHI Dashboard! 👋")
-streamlit run Dashboard.py
 
 st.markdown(
 """
