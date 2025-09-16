@@ -10,6 +10,8 @@ st.sidebar.image("./assets/heart.jpg", width=600)
 st.sidebar.success("Select a tab above.")
 
 # # Page information
+#Add a page called About
+page = st.sidebar.radio("Select a page:", ["Home", "About"])
 
 if page == "Home":
     st.write("# Welcome to PROHI Dashboard! 👋")
@@ -61,6 +63,5 @@ st.dataframe(dataframe)
 # # Add a slider to the sidebar:
 add_slider = st.slider( 'Select a range of values', 0.0, 100.0, (25.0, 75.0))
 
-#Add a page called About
-page = st.sidebar.radio("Select a page:", ["Home", "About"])
+
 
