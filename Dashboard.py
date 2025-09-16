@@ -48,13 +48,10 @@ if page == "Home":
     patient_coronary = heart_count / total_patients *100
 
     heart_count_no= df["HeartDisease"].value_counts()[0]
-    total_patients_no= df.shape[0]
-    patient_coronary_no = heart_count / total_patients *100
+    patient_coronary_no = heart_count_no / total_patients *100
 
-    a, b = st.dataframe(2)
-
-    a.metric(patient_coronary, border=True)
-    b.metric(patient_coronary_no, border=True)
+    col1.metric("Patients with Heart Disease (%)", f"{patient_coronary:.2f}", border=True)
+    col2.metric("Patients without Heart Disease (%)", f"{patient_coronary_no:.2f}", border=True)
 
 
 elif page == "About":
