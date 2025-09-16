@@ -57,7 +57,7 @@ if page == "Home":
     with st.form("my_form"):
         sex = st.text_input("Enter your gender")
         age = st.number_input("Enter your age", min_value=1)
-        blood_pressure: st.input("Enter systolic blood pressure")
+        blood_pressure: st.number_inputinput("Enter systolic blood pressure")
     
         submitted = st.form_submit_button("Submit")
 
