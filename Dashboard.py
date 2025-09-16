@@ -51,8 +51,7 @@ if page == "Home":
     total_patients_no= df.shape[0]
     patient_coronary_no = heart_count / total_patients *100
 
-    a, b = st.columns(2)
-    c, d = st.columns(2)
+    a, b = st.dataframe(2)
 
     a.metric(patient_coronary, border=True)
     b.metric(patient_coronary_no, border=True)
