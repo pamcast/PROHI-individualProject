@@ -11,28 +11,34 @@ st.sidebar.success("Select a tab above.")
 
 # # Page information
 
-st.write("# Welcome to PROHI Dashboard! 👋")
+if page == "Home":
+    st.write("# Welcome to PROHI Dashboard! 👋")
 
-st.markdown(
-"""
-    ## Aims
+    st.markdown(
+        """
+        ## Aims
 
-    After completing the course the student should be able to:
-    - explain basic project management methods
-    - be able to account for success factors in Health Informatics projects
-    - understand basic methods and tools in the field of data science and machine learning
-    - explain process models for data mining projects
-    - explain the difference between rule-based methods and machine learning methods
-    - apply basic project management methods
-    - work in an international multidisciplinary project group
-    - independently lead and implement a limited project in health informatics - document the steps in the design of a prototype for a health informatics project
-    - apply the steps in a process model for data mining projects
-    - apply methods from the field of text mining on different types of health informatics problems
-    - explain and argue for their positions regarding the implementation of a health informatics project
-    - explain how to work with sensitive health information in a safe and ethical way.
+        After completing the course the student should be able to:
+        - explain basic project management methods
+        - be able to account for success factors in Health Informatics projects
+        - understand basic methods and tools in the field of data science and machine learning
+        - explain process models for data mining projects
+        - explain the difference between rule-based methods and machine learning methods
+        - apply basic project management methods
+        - work in an international multidisciplinary project group
+        - independently lead and implement a limited project in health informatics - document the steps in the design of a prototype for a health informatics project
+        - apply the steps in a process model for data mining projects
+        - apply methods from the field of text mining on different types of health informatics problems
+        - explain and argue for their positions regarding the implementation of a health informatics project
+        - explain how to work with sensitive health information in a safe and ethical way.
 
-"""
-)
+        """
+    )
+elif page == "About":
+    st.title("About This App")
+    st.markdown("""
+        This is the About page with information about your app.")
+
 
 # You can also add text right into the web as long comments (""")
 """
@@ -57,3 +63,4 @@ add_slider = st.slider( 'Select a range of values', 0.0, 100.0, (25.0, 75.0))
 
 #Add a page called About
 page = st.sidebar.radio("Select a page:", ["Home", "About"])
+
