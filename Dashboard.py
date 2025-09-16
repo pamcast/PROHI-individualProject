@@ -40,9 +40,22 @@ if page == "Home":
     import pandas as pd
     import numpy as np
 
-    dataframe = pd.read_csv("heart.csv")
-    st.dataframe(dataframe)
+    df = pd.read_csv("heart.csv")
+    st.dataframe(df)
 
+    heart_count= df["HeartDisease"].value_counts()[1]
+    total_patients= df.shape[0]
+    patient_coronary = heart_count / total_patients *100
+
+    heart_count_no= df["HeartDisease"].value_counts()[0]
+    total_patients_no= df.shape[0]
+    patient_coronary_no = heart_count / total_patients *100
+
+    a, b = st.columns(2)
+    c, d = st.columns(2)
+
+    a.metric(patient_coronary, border=True)
+    b.metric(patient_coronary_no, border=True)
 
 
 elif page == "About":
