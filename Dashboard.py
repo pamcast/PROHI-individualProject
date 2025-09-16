@@ -55,11 +55,11 @@ if page == "Home":
     col2.metric("Patients without Heart Disease (%)", f"{patient_coronary_no:.2f}", delta="0", delta_color="inverse", border=True)
 
     with st.form("my_form"):
-    sex = st.text_input("Enter your gender")
-    age = st.number_input("Enter your age", min_value=1)
-    blood_pressure: st.number_input("Enter systolic blood pressure")
+        sex = st.text_input("Enter your gender")
+        age = st.number_input("Enter your age", min_value=1)
+        blood_pressure: st.number_input("Enter systolic blood pressure")
     
-    submitted = st.form_submit_button("Submit")
+        submitted = st.form_submit_button("Submit")
 
 
 elif page == "About":
