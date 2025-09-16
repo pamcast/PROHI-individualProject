@@ -51,8 +51,8 @@ if page == "Home":
     patient_coronary_no = heart_count_no / total_patients *100
 
     col1, col2 = st.columns(2)
-    col1.metric("Patients with Heart Disease (%)", f"{patient_coronary:.2f}", delta="0", delta_color="inverse")
-    col2.metric("Patients without Heart Disease (%)", f"{patient_coronary_no:.2f}", delta="0", delta_color="inverse")
+    col1.metric("Patients with Heart Disease (%)", f"{patient_coronary:.2f}", delta="0", delta_color="inverse", border=True)
+    col2.metric("Patients without Heart Disease (%)", f"{patient_coronary_no:.2f}", delta="0", delta_color="inverse", border=True)
 
 
 elif page == "About":
