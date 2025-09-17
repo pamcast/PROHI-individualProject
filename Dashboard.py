@@ -65,8 +65,22 @@ if page == "Home":
         
         submitted = st.form_submit_button("Submit")
 
-    
-    st.bar_chart(df, x="RestingBP", y="Sex", color="#00ccff", horizontal=True)
+    type_a = df.groupby(by=["HeartDisease", "ExerciseAngina"])["Cholesterol"].mean()
+    df_type_a = type_a.unstack()
+
+    # Plot using Matplotlib
+    fig, ax = plt.subplots()
+
+    # Plot a bar chart
+    df_type_a.plot.bar(stacked=False, ax=ax)
+
+    # Customize axis labels
+    ax.set_xlabel('Heart Disease & Exercise Angina')  # x-axis label
+    ax.set_ylabel('Average Cholesterol')  # y-axis label
+    ax.set_title('Average Cholesterol by Heart Disease and Exercise Angina')
+
+    # Display the chart in Streamlit
+    st.pyplot(fig)
 
 elif page == "About":
     st.title("Pamela Castillo")
