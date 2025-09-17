@@ -72,7 +72,7 @@ if page == "Home":
     df_type_a = type_a.unstack()
 
     # Plot using Matplotlib
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(facecolor=none)
 
     # Plot a bar chart
     df_type_a.plot.bar(stacked=False, ax=ax)
