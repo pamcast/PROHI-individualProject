@@ -14,7 +14,7 @@ st.sidebar.success("Select a tab above.")
 page = st.sidebar.radio("Select a page:", ["Home", "About"])
 
 if page == "Home":
-    st.write("# Welcome to PROHI Dashboard! 👋")
+    st.write("# Welcome to We Care Dashboard! 👋")
 
     st.markdown(
         """
@@ -63,6 +63,8 @@ if page == "Home":
         
         submitted = st.form_submit_button("Submit")
 
+    
+    st.bar_chart(df, x="Heartdisease", y="Sex", color="site", horizontal=True)
 
 elif page == "About":
     st.title("Pamela Castillo")
