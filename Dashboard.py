@@ -82,6 +82,8 @@ if page == "Home":
     ax.set_ylabel('Average Cholesterol')  # y-axis label
     ax.set_title('Average Cholesterol by Heart Disease and Exercise Angina')
 
+    #Remove background
+    ax.set_facecolor('none')
     # Display the chart in Streamlit
     st.pyplot(fig)
 
