@@ -64,7 +64,7 @@ if page == "Home":
         submitted = st.form_submit_button("Submit")
 
     
-    st.bar_chart(df, x="Heartdisease", y="Sex", color="site", horizontal=True)
+    st.bar_chart(df, x="HeartDisease", y="Sex", color="site", horizontal=True)
 
 elif page == "About":
     st.title("Pamela Castillo")
