@@ -13,6 +13,8 @@ st.sidebar.success("Select a tab above.")
 #Add a page called About
 page = st.sidebar.radio("Select a page:", ["Home", "About"])
 
+
+
 if page == "Home":
     st.write("# Welcome to We Care Dashboard! 👋")
 
