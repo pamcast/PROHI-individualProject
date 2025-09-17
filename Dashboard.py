@@ -65,6 +65,9 @@ if page == "Home":
         
         submitted = st.form_submit_button("Submit")
 
+    #Chart, import the matplotlib library
+    import matplotlib.pyplot as plt
+    
     type_a = df.groupby(by=["HeartDisease", "ExerciseAngina"])["Cholesterol"].mean()
     df_type_a = type_a.unstack()
 
