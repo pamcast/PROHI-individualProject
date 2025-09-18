@@ -7,13 +7,16 @@ The collaborator will edit the line below in GitHub -->
 
 _Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
 
-_Here you can include images, like the logo from SU_
+Dashboard screenshots
 
-![Your dashboard](./assets/project-logo.jpg)
+![Your dashboard](./assets/dashboard1.png)
+![Your dashboard](./assets/dashboard2.png)
+![Your dashboard](./assets/dashboard3.png)
+![Your dashboard](./assets/dashboard4.png)
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+_This template project will contain a simple interactive web dashboard with Streamlit. I used my database from the data science course, the purpose of the dashboard is to identify patients that will have a 
 
 ## System description
 
@@ -56,3 +59,4 @@ Tested on Python 3.12.7 with the following packages:
 ## Contributors
 
 _Add the project's authors, contact information, and links to websites or portfolios._
+
