@@ -1,4 +1,4 @@
-# PROHI Dashboard Example
+# We Care Dashboard Example
 
 **Author**: [Pamela Castillo]
 <!-- As main author, do not write anything in the line below.
@@ -16,9 +16,10 @@ Dashboard screenshots
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. I used my database from the data science course, the purpose of the dashboard is to identify patients that will have a 
+This template project will contain a simple interactive web dashboard with Streamlit. I used my database from the data science course, the purpose of the dashboard is to identify patients that will have a heart disease, the dashboard contains a home page where the user can input information and submit to get the result if the patient will have a heart disease, it will also display charts from the descriptive analysis of the data and the about page displays information about the supervised and unsupervised modeling that was done with the data. 
 
 ## System description
+The system should be user-friendly and easy to navigate, it will also comply with data privacy laws and will allow the user to input information about the patient. 
 
 ### Installation of libraries
 
