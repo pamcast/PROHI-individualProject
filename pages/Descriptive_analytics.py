@@ -1,8 +1,9 @@
 import streamlit as st
 
+@st.cache_data
 def load_data():
     import pandas as pd
-    df = pd.read_csv('healthcare-dataset-stroke-data.csv')
+    df = pd.read_csv('./jupyter-notebooks/processed_data.csv')
     return df
 
 df = load_data()
